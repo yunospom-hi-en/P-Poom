@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1722">
+  <title>ห้องรอทีม · Codewords</title>
+  <style>
+    :root{color-scheme:dark;--bg:#0b1722;--panel:#192b3a;--panel2:#203547;--line:#344b5e;--gold:#f3c66e;--cream:#f3ead7;--muted:#adbdca;--ink:#112130;--red:#a52d3c;--blue:#285d9e}
+    *{box-sizing:border-box}body{margin:0;padding:0 22px;background:var(--bg);color:#f4f1e9;font:15px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}button,input,select{font:inherit}button{cursor:pointer;color:inherit}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--gold);outline-offset:3px}.shell{max-width:980px;margin:auto}header{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:12px}.logo{width:40px;height:44px;display:grid;place-items:center;background:var(--gold);color:var(--ink);border-radius:6px 6px 14px 14px;font-size:27px;font-weight:900}.brand strong{letter-spacing:1.5px}.brand small{display:block;color:var(--muted);font-size:11px}.back{border:1px solid var(--line);border-radius:7px;background:var(--panel);padding:8px 12px}.intro{padding:32px 0 22px}.eyebrow{color:var(--gold);font-size:12px;font-weight:800;letter-spacing:1px}.intro h1{font-size:clamp(27px,5vw,39px);line-height:1.25;margin:7px 0}.intro p{color:var(--muted)}.demo{margin-top:16px;padding:10px 13px;border:1px solid #806c3f;border-radius:7px;background:#302a1c;color:#f7d995;font-size:12px}.room-card{padding:19px;border:1px solid var(--line);border-radius:11px;background:var(--panel)}.room-meta{display:flex;justify-content:space-between;align-items:center;gap:14px;padding-bottom:16px;border-bottom:1px solid var(--line)}.room-meta small{display:block;color:var(--muted)}.room-code{display:flex;align-items:center;gap:9px}.code{color:var(--gold);font-size:23px;font-weight:850;letter-spacing:3px}.copy{border:1px solid #71869a;border-radius:6px;background:var(--panel2);padding:7px 10px}.teams{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:17px 0}.team{min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:9px;background:#101e2b}.team.red{border-top:4px solid #e9858d}.team.blue{border-top:4px solid #78b5f0}.team-head{display:flex;align-items:center;gap:12px;padding:13px;border-bottom:1px solid var(--line)}.team-head img{width:58px;height:58px;object-fit:cover;border:2px solid currentColor;border-radius:10px;background:var(--cream)}.red .team-head{color:#f4a1a7}.blue .team-head{color:#8ac6ff}.team-head strong{display:block;color:#f4f1e9;font-size:18px}.team-head small{color:var(--muted)}.members{display:grid;gap:8px;padding:12px}.member{display:flex;align-items:center;gap:9px;min-height:44px;padding:7px 9px;border:1px solid #344b5e;border-radius:6px;background:var(--panel);color:#f4f1e9}.member .avatar{width:27px;height:27px;display:grid;place-items:center;border-radius:50%;background:#344b5e;font-size:14px}.member .captain{margin-left:auto;color:var(--gold);font-size:10px}.empty{padding:13px 8px;color:#8296a7;text-align:center;font-size:12px;border:1px dashed #344b5e;border-radius:6px}.join{display:grid;grid-template-columns:minmax(0,1fr) 170px auto;align-items:end;gap:10px;padding:15px;border:1px solid var(--line);border-radius:9px;background:#101e2b}.field label{display:block;margin-bottom:5px;font-size:12px;font-weight:700}.field input,.field select{width:100%;height:43px;padding:0 10px;border:1px solid #6d8497;border-radius:6px;background:#0b1722;color:#f4f1e9}.join-button,.start{height:43px;padding:0 16px;border:0;border-radius:6px;background:var(--gold);color:var(--ink);font-weight:800}.join-button:hover,.start:hover{background:#ffda8b}.foot-actions{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:16px}.ready{color:var(--muted);font-size:13px}.ready strong{color:var(--gold)}.start:disabled{opacity:.45;cursor:not-allowed}.note{margin-top:13px;color:var(--muted);font-size:12px}.toast{min-height:22px;margin-top:8px;color:var(--gold);font-size:12px}footer{padding:20px 0;color:var(--muted);font-size:11px;text-align:center}
+    @media(max-width:650px){body{padding:0 13px}header{height:68px}.teams{gap:8px}.room-card{padding:13px}.team-head{gap:8px;padding:10px}.team-head img{width:43px;height:43px}.team-head strong{font-size:16px}.members{padding:8px}.member{font-size:12px}.join{grid-template-columns:1fr 125px}.join-button{grid-column:1/-1;width:100%}.foot-actions{align-items:flex-start;flex-direction:column}.start{width:100%}.code{font-size:20px}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div class="brand"><span class="logo">◈</span><div><strong>CODEWORDS</strong><small>หน่วยถอดรหัสลับ</small></div></div>
+      <a class="back" href="index.html" style="text-decoration:none">← กลับหน้าหลัก</a>
+    </header>
+    <section class="intro">
+      <span class="eyebrow">MULTIPLAYER · WAITING ROOM</span>
+      <h1>ห้องรอพร้อมแล้ว<br><span style="color:var(--gold)">เลือกทีม แล้วชวนเพื่อนเข้าร่วม</span></h1>
+      <p>แบ่งทีมสีแดงและสีน้ำเงินก่อนเริ่มภารกิจ</p>
+      <div class="demo">ตัวอย่างหน้าจอเท่านั้น · รายชื่อและการเข้าทีมยังไม่ซิงก์กับอุปกรณ์อื่น</div>
+    </section>
+    <section class="room-card" aria-label="ห้องรอทีม">
+      <div class="room-meta">
+        <div><small>รหัสห้อง</small><div class="room-code"><strong class="code" id="room-code">POOM-27</strong><button class="copy" id="copy-code">คัดลอกรหัส</button></div></div>
+        <div style="text-align:right"><small>ผู้เล่นในห้อง</small><strong id="player-count">4 คน</strong></div>
+      </div>
+      <div class="teams">
+        <section class="team red" aria-label="ทีมสีแดง"><div class="team-head"><img src="assets/team-red.svg" alt="โปรไฟล์ทีมสีแดง"><div><strong>ทีมสีแดง</strong><small>ทีมปฏิบัติการแดง</small></div></div><div class="members" id="red-members"></div></section>
+        <section class="team blue" aria-label="ทีมสีฟ้า"><div class="team-head"><img src="assets/team-blue.svg" alt="โปรไฟล์ทีมสีฟ้า"><div><strong>ทีมสีฟ้า</strong><small>ทีมปฏิบัติการฟ้า</small></div></div><div class="members" id="blue-members"></div></section>
+      </div>
+      <form class="join" id="join-form">
+        <div class="field"><label for="player-name">ชื่อผู้เล่น</label><input id="player-name" maxlength="20" placeholder="ใส่ชื่อเล่น" required></div>
+        <div class="field"><label for="team-choice">เลือกทีม</label><select id="team-choice"><option value="red">ทีมสีแดง</option><option value="blue">ทีมสีฟ้า</option></select></div>
+        <button class="join-button" type="submit">เข้าร่วมทีม +</button>
+      </form>
+      <div class="foot-actions"><div class="ready" id="ready-status">รอผู้เล่นเข้าห้อง... <strong>4 / 8 คน</strong></div><button class="start" id="start-game" disabled>เริ่มเกม (ตัวอย่าง)</button></div>
+      <div class="toast" id="notice" role="status" aria-live="polite"></div>
+      <p class="note">ตัวอย่างนี้เพิ่มผู้เล่นไว้ในเบราว์เซอร์เครื่องนี้เท่านั้น ปุ่มเริ่มเกมยังไม่เชื่อมระบบเล่นออนไลน์</p>
+    </section>
+    <footer>CODEWORDS · หน่วยถอดรหัสลับ</footer>
+  </main>
+<script>
+  const players = [
+    { name: 'สายลับต้น', team: 'red', captain: true },
+    { name: 'นักสืบเมฆ', team: 'red' },
+    { name: 'Agent Blue', team: 'blue', captain: true },
+    { name: 'คุณ (ตัวอย่าง)', team: 'blue' }
+  ];
+  const $ = selector => document.querySelector(selector);
+  function render() {
+    for (const team of ['red', 'blue']) {
+      const container = $(`#${team}-members`);
+      const members = players.filter(player => player.team === team);
+      container.innerHTML = members.length ? members.map((player, index) => `
+        <div class="member"><span class="avatar">${player.captain ? '♛' : '●'}</span><span>${escapeHTML(player.name)}</span>${player.captain ? '<span class="captain">หัวหน้าทีม</span>' : ''}</div>
+      `).join('') : '<div class="empty">ยังไม่มีผู้เล่น · รอเพื่อนเข้าทีม</div>';
+    }
+    $('#player-count').textContent = `${players.length} คน`;
+    $('#ready-status').innerHTML = `รอผู้เล่นเข้าห้อง... <strong>${players.length} / 8 คน</strong>`;
+    $('#start-game').disabled = players.length < 2;
+  }
+  function escapeHTML(value) {
+    return String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
+  }
+  $('#join-form').addEventListener('submit', event => {
+    event.preventDefault();
+    if (players.length >= 8) { $('#notice').textContent = 'ห้องตัวอย่างเต็มแล้ว (8 คน)'; return; }
+    const name = $('#player-name').value.trim();
+    if (!name) return;
+    players.push({ name, team: $('#team-choice').value });
+    $('#player-name').value = '';
+    $('#notice').textContent = `${name} เข้าร่วมทีม${$('#team-choice').value === 'red' ? 'สีแดง' : 'สีฟ้า'}แล้ว (เฉพาะตัวอย่างนี้)`;
+    render();
+  });
+  $('#copy-code').addEventListener('click', async () => {
+    try { await navigator.clipboard.writeText($('#room-code').textContent); $('#notice').textContent = 'คัดลอกรหัสห้องตัวอย่างแล้ว'; }
+    catch { $('#notice').textContent = 'รหัสห้อง: ' + $('#room-code').textContent; }
+  });
+  $('#start-game').addEventListener('click', () => { $('#notice').textContent = 'นี่เป็นหน้าตัวอย่าง ยังไม่ได้เชื่อมเข้าสู่เกมออนไลน์'; });
+  render();
+</script>
+</body>
+</html>
